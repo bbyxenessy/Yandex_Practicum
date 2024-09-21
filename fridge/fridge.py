@@ -91,7 +91,6 @@ print(amount(goods, 'Красное вино'))
 def expire(items, in_advance_days=0):
     check_date = timedelta(days=in_advance_days) + date.today()
     values = {}
-    {"помидоры": 5}
     for item in items:
         items[item]
         for others in items[item]:
