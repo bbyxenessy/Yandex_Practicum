@@ -49,7 +49,7 @@ def add_by_note(items, note):
     if len(part[-1].split('-')) == 3:
         expiration_date = part[-1]
         amount = Decimal(part[-2])
-        title = str.join(' ', part[0:-1])
+        title = str.join(' ', part[0:-2])
         add(items, title, amount, expiration_date)
     else:
         amount = Decimal(part[-1])
